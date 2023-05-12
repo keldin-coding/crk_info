@@ -1,0 +1,458 @@
+digraph production_data {
+  // Materials
+  subgraph cluster_materials {
+    
+    berry [label="Jellyberry", fillcolor="lightyellow", style="filled"];
+    
+    flour [label="Biscuit Flour", fillcolor="lightyellow", style="filled"];
+    
+    jellybean [label="Jellybean", fillcolor="lightyellow", style="filled"];
+    
+    milk [label="Milk", fillcolor="lightyellow", style="filled"];
+    
+    sugar [label="Sugar Cube", fillcolor="lightyellow", style="filled"];
+    
+    wood [label="Roll Cake Wood", fillcolor="lightyellow", style="filled"];
+    
+    wool [label="Cotton Candy Wool", fillcolor="lightyellow", style="filled"];
+    
+  }
+
+  // Goods
+  
+  acorn_lamp [label="Acorn Lamp", fillcolor="lightblue", style="filled"];
+  
+  axe [label="Robust Axe", fillcolor="lightblue", style="filled"];
+  
+  bead [label="Gleamy Bead", fillcolor="lightblue", style="filled"];
+  
+  biscuit_planter [label="Biscuit planter", fillcolor="lightblue", style="filled"];
+  
+  blue_jam [label="Jellybean Jam (blue)", fillcolor="lightblue", style="filled"];
+  
+  boba [label="Bubbly Boba", fillcolor="lightblue", style="filled"];
+  
+  bowl [label="Colorful Bowl", fillcolor="lightblue", style="filled"];
+  
+  brooch [label="Rubyberry Brooch", fillcolor="lightblue", style="filled"];
+  
+  burger [label="Bear Jelly Burger", fillcolor="lightblue", style="filled"];
+  
+  butter [label="Butter", fillcolor="lightblue", style="filled"];
+  
+  candy_bouquet [label="Candy Bouquet", fillcolor="lightblue", style="filled"];
+  
+  candy_flower [label="Candy Flower", fillcolor="lightblue", style="filled"];
+  
+  candy_saw [label="Candy Saw", fillcolor="lightblue", style="filled"];
+  
+  castella [label="Fluffy Castella", fillcolor="lightblue", style="filled"];
+  
+  cheese [label="Homemade Cheese", fillcolor="lightblue", style="filled"];
+  
+  cream [label="Cream", fillcolor="lightblue", style="filled"];
+  
+  croissant [label="Golden Croissant", fillcolor="lightblue", style="filled"];
+  
+  crown [label="Bear Jelly Crown", fillcolor="lightblue", style="filled"];
+  
+  cuckoo_clock [label="Cuckoo clock", fillcolor="lightblue", style="filled"];
+  
+  deluxe_pizza [label="Jelly Deluxe Pizza", fillcolor="lightblue", style="filled"];
+  
+  doughnut [label="Glazed Donuts", fillcolor="lightblue", style="filled"];
+  
+  dreamcatcher [label="Swan Feather Dreamcatcher", fillcolor="lightblue", style="filled"];
+  
+  fancy_meal [label="Fancy Jellybean Meal", fillcolor="lightblue", style="filled"];
+  
+  flower_bouquet [label="Bell-Flower Bouquet", fillcolor="lightblue", style="filled"];
+  
+  focaccia [label="Gingko Focaccia", fillcolor="lightblue", style="filled"];
+  
+  glass [label="Shiny Glass", fillcolor="lightblue", style="filled"];
+  
+  glazed_ring [label="Glazed Ring", fillcolor="lightblue", style="filled"];
+  
+  hammer [label="Indestructible Glazed Hammer", fillcolor="lightblue", style="filled"];
+  
+  happy_planter [label="Happy Planter", fillcolor="lightblue", style="filled"];
+  
+  latte [label="Jellybean Latte", fillcolor="lightblue", style="filled"];
+  
+  lollipop_basket [label="Lollipop Flower Basket", fillcolor="lightblue", style="filled"];
+  
+  muffin [label="Spooky Muffin", fillcolor="lightblue", style="filled"];
+  
+  omurice [label="Fluffy Omurice", fillcolor="lightblue", style="filled"];
+  
+  party_cake [label="Party Cake", fillcolor="lightblue", style="filled"];
+  
+  pasta [label="Candy Pasta", fillcolor="lightblue", style="filled"];
+  
+  pickaxe [label="Tempered pickaxe", fillcolor="lightblue", style="filled"];
+  
+  pie [label="Tart Jampie", fillcolor="lightblue", style="filled"];
+  
+  pillow [label="Cloud Pillow", fillcolor="lightblue", style="filled"];
+  
+  pinecone [label="Pinecone Birdy Toy", fillcolor="lightblue", style="filled"];
+  
+  pitaya_dragon [label="Pitaya Dragon Toy", fillcolor="lightblue", style="filled"];
+  
+  pom_jam [label="Pomegranate Jam", fillcolor="lightblue", style="filled"];
+  
+  red_jam [label="Sweet Jelly Jam (red)", fillcolor="lightblue", style="filled"];
+  
+  redberry_juice [label="Redberry Juice", fillcolor="lightblue", style="filled"];
+  
+  root_beer [label="Cream Root Beer", fillcolor="lightblue", style="filled"];
+  
+  root_bottle [label="Vintage Root Bottle", fillcolor="lightblue", style="filled"];
+  
+  rye [label="Hearty Rye", fillcolor="lightblue", style="filled"];
+  
+  shovel [label="Diggy Shovel", fillcolor="lightblue", style="filled"];
+  
+  sparkleberry_jam [label="Sparkleberry Jam", fillcolor="lightblue", style="filled"];
+  
+  stake [label="Enchanted stake", fillcolor="lightblue", style="filled"];
+  
+  stew [label="Hot Jelly Stew", fillcolor="lightblue", style="filled"];
+  
+  strawberry_cake [label="Strawberry Cake", fillcolor="lightblue", style="filled"];
+  
+  toffee_jam [label="Toffee Jam (yellow)", fillcolor="lightblue", style="filled"];
+  
+  tongs [label="Enchanted Tongs", fillcolor="lightblue", style="filled"];
+  
+  toy [label="Bear Jelly Toy", fillcolor="lightblue", style="filled"];
+  
+  yogurt_wreath [label="Glittering Yogurt Wreath", fillcolor="lightblue", style="filled"];
+  
+
+  // And edge time
+  
+  
+  acorn_lamp -> wood [label="Uses 12"];
+  
+  acorn_lamp -> berry [label="Uses 3"];
+  
+  
+  
+  axe -> wood [label="Uses 2"];
+  
+  
+  
+  bead -> burger [label="Uses 1"];
+  
+  bead -> wool [label="Uses 1"];
+  
+  
+  
+  biscuit_planter -> flour [label="Uses 4"];
+  
+  biscuit_planter -> pinecone [label="Uses 2"];
+  
+  
+  
+  blue_jam -> jellybean [label="Uses 3"];
+  
+  
+  
+  boba -> doughnut [label="Uses 1"];
+  
+  boba -> wool [label="Uses 1"];
+  
+  
+  
+  bowl -> sugar [label="Uses 24"];
+  
+  bowl -> pom_jam [label="Uses 2"];
+  
+  
+  
+  brooch -> berry [label="Uses 16"];
+  
+  brooch -> dreamcatcher [label="Uses 1"];
+  
+  
+  
+  burger -> jellybean [label="Uses 10"];
+  
+  burger -> pie [label="Uses 1"];
+  
+  
+  
+  butter -> sugar [label="Uses 15"];
+  
+  butter -> milk [label="Uses 5"];
+  
+  
+  
+  candy_bouquet -> berry [label="Uses 5"];
+  
+  candy_bouquet -> pasta [label="Uses 1"];
+  
+  
+  
+  candy_flower -> berry [label="Uses 2"];
+  
+  candy_flower -> biscuit_planter [label="Uses 1"];
+  
+  
+  
+  candy_saw -> wood [label="Uses 6"];
+  
+  candy_saw -> sugar [label="Uses 5"];
+  
+  
+  
+  castella -> sugar [label="Uses 20"];
+  
+  castella -> milk [label="Uses 8"];
+  
+  
+  
+  cheese -> cuckoo_clock [label="Uses 1"];
+  
+  cheese -> milk [label="Uses 10"];
+  
+  
+  
+  cream -> milk [label="Uses 2"];
+  
+  cream -> red_jam [label="Uses 1"];
+  
+  
+  
+  croissant -> butter [label="Uses 1"];
+  
+  croissant -> milk [label="Uses 15"];
+  
+  
+  
+  crown -> wool [label="Uses 3"];
+  
+  crown -> flower_bouquet [label="Uses 1"];
+  
+  
+  
+  cuckoo_clock -> flour [label="Uses 8"];
+  
+  cuckoo_clock -> toffee_jam [label="Uses 3"];
+  
+  
+  
+  deluxe_pizza -> candy_flower [label="Uses 4"];
+  
+  deluxe_pizza -> berry [label="Uses 8"];
+  
+  
+  
+  doughnut -> glass [label="Uses 1"];
+  
+  doughnut -> flour [label="Uses 5"];
+  
+  
+  
+  dreamcatcher -> wool [label="Uses 1"];
+  
+  dreamcatcher -> omurice [label="Uses 1"];
+  
+  
+  
+  fancy_meal -> jellybean [label="Uses 25"];
+  
+  fancy_meal -> lollipop_basket [label="Uses 3"];
+  
+  
+  
+  flower_bouquet -> jellybean [label="Uses 20"];
+  
+  flower_bouquet -> pillow [label="Uses 2"];
+  
+  
+  
+  focaccia -> acorn_lamp [label="Uses 1"];
+  
+  focaccia -> flour [label="Uses 6"];
+  
+  
+  
+  glass -> sugar [label="Uses 12"];
+  
+  glass -> stew [label="Uses 1"];
+  
+  
+  
+  glazed_ring -> flour [label="Uses 12"];
+  
+  glazed_ring -> castella [label="Uses 1"];
+  
+  
+  
+  hammer -> wood [label="Uses 30"];
+  
+  hammer -> sugar [label="Uses 35"];
+  
+  
+  
+  happy_planter -> sugar [label="Uses 10"];
+  
+  happy_planter -> berry [label="Uses 4"];
+  
+  
+  
+  latte -> jellybean [label="Uses 12"];
+  
+  latte -> milk [label="Uses 2"];
+  
+  
+  
+  lollipop_basket -> jellybean [label="Uses 18"];
+  
+  lollipop_basket -> rye [label="Uses 3"];
+  
+  
+  
+  muffin -> flour [label="Uses 12"];
+  
+  muffin -> milk [label="Uses 7"];
+  
+  
+  
+  omurice -> berry [label="Uses 6"];
+  
+  omurice -> focaccia [label="Uses 1"];
+  
+  
+  
+  party_cake -> flour [label="Uses 18"];
+  
+  party_cake -> cheese [label="Uses 2"];
+  
+  
+  
+  pasta -> flour [label="Uses 7"];
+  
+  pasta -> cream [label="Uses 1"];
+  
+  
+  
+  pickaxe -> wood [label="Uses 3"];
+  
+  pickaxe -> sugar [label="Uses 3"];
+  
+  
+  
+  pie -> jellybean [label="Uses 6"];
+  
+  pie -> flour [label="Uses 3"];
+  
+  
+  
+  pillow -> flour [label="Uses 8"];
+  
+  pillow -> wool [label="Uses 1"];
+  
+  
+  
+  pinecone -> wood [label="Uses 6"];
+  
+  
+  
+  pitaya_dragon -> wool [label="Uses 2"];
+  
+  pitaya_dragon -> root_beer [label="Uses 2"];
+  
+  
+  
+  pom_jam -> wool [label="Uses 1"];
+  
+  pom_jam -> latte [label="Uses 1"];
+  
+  
+  
+  red_jam -> jellybean [label="Uses 6"];
+  
+  
+  
+  redberry_juice -> berry [label="Uses 2"];
+  
+  redberry_juice -> toy [label="Uses 1"];
+  
+  
+  
+  root_beer -> flour [label="Uses 10"];
+  
+  root_beer -> happy_planter [label="Uses 1"];
+  
+  
+  
+  root_bottle -> wood [label="Uses 50"];
+  
+  root_bottle -> muffin [label="Uses 2"];
+  
+  
+  
+  rye -> flour [label="Uses 2"];
+  
+  rye -> blue_jam [label="Uses 1"];
+  
+  
+  
+  shovel -> wood [label="Uses 10"];
+  
+  shovel -> sugar [label="Uses 10"];
+  
+  
+  
+  sparkleberry_jam -> wool [label="Uses 3"];
+  
+  sparkleberry_jam -> jellybean [label="Uses 20"];
+  
+  
+  
+  stake -> wood [label="Uses 15"];
+  
+  stake -> sugar [label="Uses 15"];
+  
+  
+  
+  stew -> jellybean [label="Uses 4"];
+  
+  stew -> berry [label="Uses 1"];
+  
+  
+  
+  strawberry_cake -> flour [label="Uses 14"];
+  
+  strawberry_cake -> boba [label="Uses 2"];
+  
+  
+  
+  toffee_jam -> jellybean [label="Uses 6"];
+  
+  toffee_jam -> berry [label="Uses 1"];
+  
+  
+  
+  tongs -> wood [label="Uses 22"];
+  
+  tongs -> sugar [label="Uses 18"];
+  
+  
+  
+  toy -> wool [label="Uses 1"];
+  
+  toy -> candy_bouquet [label="Uses 2"];
+  
+  
+  
+  yogurt_wreath -> deluxe_pizza [label="Uses 2"];
+  
+  yogurt_wreath -> jellybean [label="Uses 30"];
+  
+  
+}

@@ -1,0 +1,20 @@
+digraph production_data {
+  // Materials
+  subgraph cluster_materials {
+    <% materials.each do |mat_id, material| %>
+    <%= mat_id %> [label="<%= material.label %>", fillcolor="lightyellow", style="filled"];
+    <% end %>
+  }
+
+  // Goods
+  <% goods.each do |good_id, good| %>
+  <%= good_id %> [label="<%= good.label %>", fillcolor="lightblue", style="filled"];
+  <% end %>
+
+  // And edge time
+  <% goods.each do |good_id, good| %>
+  <% good.requires.each do |requirement| %>
+  <%= good_id %> -> <%= requirement.item_id %> [label="<%= "Uses #{requirement.count}" %>"];
+  <% end %>
+  <% end %>
+}

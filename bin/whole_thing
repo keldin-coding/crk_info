@@ -1,0 +1,10 @@
+#!/usr/bin/env zsh
+
+set -euo pipefail
+
+./bin/generate_json
+./bin/generate_dot
+
+dot -Tpng production_data.dot -o production_data.png
+open production_data.png
+

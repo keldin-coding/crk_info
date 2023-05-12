@@ -1,0 +1,6 @@
+#!/usr/bin/env zsh
+
+set -euo pipefail
+pushd data
+jsonnet production_data.jsonnet -o production_data.json
+popd

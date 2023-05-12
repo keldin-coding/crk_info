@@ -1,0 +1,788 @@
+{
+   "goods": {
+      "acorn_lamp": {
+         "id": "acorn_lamp",
+         "label": "Acorn Lamp",
+         "requires": [
+            {
+               "count": 12,
+               "item": "wood"
+            },
+            {
+               "count": 3,
+               "item": "berry"
+            }
+         ]
+      },
+      "axe": {
+         "id": "axe",
+         "label": "Robust Axe",
+         "requires": [
+            {
+               "count": 2,
+               "item": "wood"
+            }
+         ]
+      },
+      "bead": {
+         "id": "bead",
+         "label": "Gleamy Bead",
+         "requires": [
+            {
+               "count": 1,
+               "item": "burger"
+            },
+            {
+               "count": 1,
+               "item": "wool"
+            }
+         ]
+      },
+      "biscuit_planter": {
+         "id": "biscuit_planter",
+         "label": "Biscuit planter",
+         "requires": [
+            {
+               "count": 4,
+               "item": "flour"
+            },
+            {
+               "count": 2,
+               "item": "pinecone"
+            }
+         ]
+      },
+      "blue_jam": {
+         "id": "blue_jam",
+         "label": "Jellybean Jam (blue)",
+         "requires": [
+            {
+               "count": 3,
+               "item": "jellybean"
+            }
+         ]
+      },
+      "boba": {
+         "id": "boba",
+         "label": "Bubbly Boba",
+         "requires": [
+            {
+               "count": 1,
+               "item": "doughnut"
+            },
+            {
+               "count": 1,
+               "item": "wool"
+            }
+         ]
+      },
+      "bowl": {
+         "id": "bowl",
+         "label": "Colorful Bowl",
+         "requires": [
+            {
+               "count": 24,
+               "item": "sugar"
+            },
+            {
+               "count": 2,
+               "item": "pom_jam"
+            }
+         ]
+      },
+      "brooch": {
+         "id": "brooch",
+         "label": "Rubyberry Brooch",
+         "requires": [
+            {
+               "count": 16,
+               "item": "berry"
+            },
+            {
+               "count": 1,
+               "item": "dreamcatcher"
+            }
+         ]
+      },
+      "burger": {
+         "id": "burger",
+         "label": "Bear Jelly Burger",
+         "requires": [
+            {
+               "count": 10,
+               "item": "jellybean"
+            },
+            {
+               "count": 1,
+               "item": "pie"
+            }
+         ]
+      },
+      "butter": {
+         "id": "butter",
+         "label": "Butter",
+         "requires": [
+            {
+               "count": 15,
+               "item": "sugar"
+            },
+            {
+               "count": 5,
+               "item": "milk"
+            }
+         ]
+      },
+      "candy_bouquet": {
+         "id": "candy_bouquet",
+         "label": "Candy Bouquet",
+         "requires": [
+            {
+               "count": 5,
+               "item": "berry"
+            },
+            {
+               "count": 1,
+               "item": "pasta"
+            }
+         ]
+      },
+      "candy_flower": {
+         "id": "candy_flower",
+         "label": "Candy Flower",
+         "requires": [
+            {
+               "count": 2,
+               "item": "berry"
+            },
+            {
+               "count": 1,
+               "item": "biscuit_planter"
+            }
+         ]
+      },
+      "candy_saw": {
+         "id": "candy_saw",
+         "label": "Candy Saw",
+         "requires": [
+            {
+               "count": 6,
+               "item": "wood"
+            },
+            {
+               "count": 5,
+               "item": "sugar"
+            }
+         ]
+      },
+      "castella": {
+         "id": "castella",
+         "label": "Fluffy Castella",
+         "requires": [
+            {
+               "count": 20,
+               "item": "sugar"
+            },
+            {
+               "count": 8,
+               "item": "milk"
+            }
+         ]
+      },
+      "cheese": {
+         "id": "cheese",
+         "label": "Homemade Cheese",
+         "requires": [
+            {
+               "count": 1,
+               "item": "cuckoo_clock"
+            },
+            {
+               "count": 10,
+               "item": "milk"
+            }
+         ]
+      },
+      "cream": {
+         "id": "cream",
+         "label": "Cream",
+         "requires": [
+            {
+               "count": 2,
+               "item": "milk"
+            },
+            {
+               "count": 1,
+               "item": "red_jam"
+            }
+         ]
+      },
+      "croissant": {
+         "id": "croissant",
+         "label": "Golden Croissant",
+         "requires": [
+            {
+               "count": 1,
+               "item": "butter"
+            },
+            {
+               "count": 15,
+               "item": "milk"
+            }
+         ]
+      },
+      "crown": {
+         "id": "crown",
+         "label": "Bear Jelly Crown",
+         "requires": [
+            {
+               "count": 3,
+               "item": "wool"
+            },
+            {
+               "count": 1,
+               "item": "flower_bouquet"
+            }
+         ]
+      },
+      "cuckoo_clock": {
+         "id": "cuckoo_clock",
+         "label": "Cuckoo clock",
+         "requires": [
+            {
+               "count": 8,
+               "item": "flour"
+            },
+            {
+               "count": 3,
+               "item": "toffee_jam"
+            }
+         ]
+      },
+      "deluxe_pizza": {
+         "id": "deluxe_pizza",
+         "label": "Jelly Deluxe Pizza",
+         "requires": [
+            {
+               "count": 4,
+               "item": "candy_flower"
+            },
+            {
+               "count": 8,
+               "item": "berry"
+            }
+         ]
+      },
+      "doughnut": {
+         "id": "doughnut",
+         "label": "Glazed Donuts",
+         "requires": [
+            {
+               "count": 1,
+               "item": "glass"
+            },
+            {
+               "count": 5,
+               "item": "flour"
+            }
+         ]
+      },
+      "dreamcatcher": {
+         "id": "dreamcatcher",
+         "label": "Swan Feather Dreamcatcher",
+         "requires": [
+            {
+               "count": 1,
+               "item": "wool"
+            },
+            {
+               "count": 1,
+               "item": "omurice"
+            }
+         ]
+      },
+      "fancy_meal": {
+         "id": "fancy_meal",
+         "label": "Fancy Jellybean Meal",
+         "requires": [
+            {
+               "count": 25,
+               "item": "jellybean"
+            },
+            {
+               "count": 3,
+               "item": "lollipop_basket"
+            }
+         ]
+      },
+      "flower_bouquet": {
+         "id": "flower_bouquet",
+         "label": "Bell-Flower Bouquet",
+         "requires": [
+            {
+               "count": 20,
+               "item": "jellybean"
+            },
+            {
+               "count": 2,
+               "item": "pillow"
+            }
+         ]
+      },
+      "focaccia": {
+         "id": "focaccia",
+         "label": "Gingko Focaccia",
+         "requires": [
+            {
+               "count": 1,
+               "item": "acorn_lamp"
+            },
+            {
+               "count": 6,
+               "item": "flour"
+            }
+         ]
+      },
+      "glass": {
+         "id": "glass",
+         "label": "Shiny Glass",
+         "requires": [
+            {
+               "count": 12,
+               "item": "sugar"
+            },
+            {
+               "count": 1,
+               "item": "stew"
+            }
+         ]
+      },
+      "glazed_ring": {
+         "id": "glazed_ring",
+         "label": "Glazed Ring",
+         "requires": [
+            {
+               "count": 12,
+               "item": "flour"
+            },
+            {
+               "count": 1,
+               "item": "castella"
+            }
+         ]
+      },
+      "hammer": {
+         "id": "hammer",
+         "label": "Indestructible Glazed Hammer",
+         "requires": [
+            {
+               "count": 30,
+               "item": "wood"
+            },
+            {
+               "count": 35,
+               "item": "sugar"
+            }
+         ]
+      },
+      "happy_planter": {
+         "id": "happy_planter",
+         "label": "Happy Planter",
+         "requires": [
+            {
+               "count": 10,
+               "item": "sugar"
+            },
+            {
+               "count": 4,
+               "item": "berry"
+            }
+         ]
+      },
+      "latte": {
+         "id": "latte",
+         "label": "Jellybean Latte",
+         "requires": [
+            {
+               "count": 12,
+               "item": "jellybean"
+            },
+            {
+               "count": 2,
+               "item": "milk"
+            }
+         ]
+      },
+      "lollipop_basket": {
+         "id": "lollipop_basket",
+         "label": "Lollipop Flower Basket",
+         "requires": [
+            {
+               "count": 18,
+               "item": "jellybean"
+            },
+            {
+               "count": 3,
+               "item": "rye"
+            }
+         ]
+      },
+      "muffin": {
+         "id": "muffin",
+         "label": "Spooky Muffin",
+         "requires": [
+            {
+               "count": 12,
+               "item": "flour"
+            },
+            {
+               "count": 7,
+               "item": "milk"
+            }
+         ]
+      },
+      "omurice": {
+         "id": "omurice",
+         "label": "Fluffy Omurice",
+         "requires": [
+            {
+               "count": 6,
+               "item": "berry"
+            },
+            {
+               "count": 1,
+               "item": "focaccia"
+            }
+         ]
+      },
+      "party_cake": {
+         "id": "party_cake",
+         "label": "Party Cake",
+         "requires": [
+            {
+               "count": 18,
+               "item": "flour"
+            },
+            {
+               "count": 2,
+               "item": "cheese"
+            }
+         ]
+      },
+      "pasta": {
+         "id": "pasta",
+         "label": "Candy Pasta",
+         "requires": [
+            {
+               "count": 7,
+               "item": "flour"
+            },
+            {
+               "count": 1,
+               "item": "cream"
+            }
+         ]
+      },
+      "pickaxe": {
+         "id": "pickaxe",
+         "label": "Tempered pickaxe",
+         "requires": [
+            {
+               "count": 3,
+               "item": "wood"
+            },
+            {
+               "count": 3,
+               "item": "sugar"
+            }
+         ]
+      },
+      "pie": {
+         "id": "pie",
+         "label": "Tart Jampie",
+         "requires": [
+            {
+               "count": 6,
+               "item": "jellybean"
+            },
+            {
+               "count": 3,
+               "item": "flour"
+            }
+         ]
+      },
+      "pillow": {
+         "id": "pillow",
+         "label": "Cloud Pillow",
+         "requires": [
+            {
+               "count": 8,
+               "item": "flour"
+            },
+            {
+               "count": 1,
+               "item": "wool"
+            }
+         ]
+      },
+      "pinecone": {
+         "id": "pinecone",
+         "label": "Pinecone Birdy Toy",
+         "requires": [
+            {
+               "count": 6,
+               "item": "wood"
+            }
+         ]
+      },
+      "pitaya_dragon": {
+         "id": "pitaya_dragon",
+         "label": "Pitaya Dragon Toy",
+         "requires": [
+            {
+               "count": 2,
+               "item": "wool"
+            },
+            {
+               "count": 2,
+               "item": "root_beer"
+            }
+         ]
+      },
+      "pom_jam": {
+         "id": "pom_jam",
+         "label": "Pomegranate Jam",
+         "requires": [
+            {
+               "count": 1,
+               "item": "wool"
+            },
+            {
+               "count": 1,
+               "item": "latte"
+            }
+         ]
+      },
+      "red_jam": {
+         "id": "red_jam",
+         "label": "Sweet Jelly Jam (red)",
+         "requires": [
+            {
+               "count": 6,
+               "item": "jellybean"
+            }
+         ]
+      },
+      "redberry_juice": {
+         "id": "redberry_juice",
+         "label": "Redberry Juice",
+         "requires": [
+            {
+               "count": 2,
+               "item": "berry"
+            },
+            {
+               "count": 1,
+               "item": "toy"
+            }
+         ]
+      },
+      "root_beer": {
+         "id": "root_beer",
+         "label": "Cream Root Beer",
+         "requires": [
+            {
+               "count": 10,
+               "item": "flour"
+            },
+            {
+               "count": 1,
+               "item": "happy_planter"
+            }
+         ]
+      },
+      "root_bottle": {
+         "id": "root_bottle",
+         "label": "Vintage Root Bottle",
+         "requires": [
+            {
+               "count": 50,
+               "item": "wood"
+            },
+            {
+               "count": 2,
+               "item": "muffin"
+            }
+         ]
+      },
+      "rye": {
+         "id": "rye",
+         "label": "Hearty Rye",
+         "requires": [
+            {
+               "count": 2,
+               "item": "flour"
+            },
+            {
+               "count": 1,
+               "item": "blue_jam"
+            }
+         ]
+      },
+      "shovel": {
+         "id": "shovel",
+         "label": "Diggy Shovel",
+         "requires": [
+            {
+               "count": 10,
+               "item": "wood"
+            },
+            {
+               "count": 10,
+               "item": "sugar"
+            }
+         ]
+      },
+      "sparkleberry_jam": {
+         "id": "sparkleberry_jam",
+         "label": "Sparkleberry Jam",
+         "requires": [
+            {
+               "count": 3,
+               "item": "wool"
+            },
+            {
+               "count": 20,
+               "item": "jellybean"
+            }
+         ]
+      },
+      "stake": {
+         "id": "stake",
+         "label": "Enchanted stake",
+         "requires": [
+            {
+               "count": 15,
+               "item": "wood"
+            },
+            {
+               "count": 15,
+               "item": "sugar"
+            }
+         ]
+      },
+      "stew": {
+         "id": "stew",
+         "label": "Hot Jelly Stew",
+         "requires": [
+            {
+               "count": 4,
+               "item": "jellybean"
+            },
+            {
+               "count": 1,
+               "item": "berry"
+            }
+         ]
+      },
+      "strawberry_cake": {
+         "id": "strawberry_cake",
+         "label": "Strawberry Cake",
+         "requires": [
+            {
+               "count": 14,
+               "item": "flour"
+            },
+            {
+               "count": 2,
+               "item": "boba"
+            }
+         ]
+      },
+      "toffee_jam": {
+         "id": "toffee_jam",
+         "label": "Toffee Jam (yellow)",
+         "requires": [
+            {
+               "count": 6,
+               "item": "jellybean"
+            },
+            {
+               "count": 1,
+               "item": "berry"
+            }
+         ]
+      },
+      "tongs": {
+         "id": "tongs",
+         "label": "Enchanted Tongs",
+         "requires": [
+            {
+               "count": 22,
+               "item": "wood"
+            },
+            {
+               "count": 18,
+               "item": "sugar"
+            }
+         ]
+      },
+      "toy": {
+         "id": "toy",
+         "label": "Bear Jelly Toy",
+         "requires": [
+            {
+               "count": 1,
+               "item": "wool"
+            },
+            {
+               "count": 2,
+               "item": "candy_bouquet"
+            }
+         ]
+      },
+      "yogurt_wreath": {
+         "id": "yogurt_wreath",
+         "label": "Glittering Yogurt Wreath",
+         "requires": [
+            {
+               "count": 2,
+               "item": "deluxe_pizza"
+            },
+            {
+               "count": 30,
+               "item": "jellybean"
+            }
+         ]
+      }
+   },
+   "materials": {
+      "berry": {
+         "id": "berry",
+         "label": "Jellyberry"
+      },
+      "flour": {
+         "id": "flour",
+         "label": "Biscuit Flour"
+      },
+      "jellybean": {
+         "id": "jellybean",
+         "label": "Jellybean"
+      },
+      "milk": {
+         "id": "milk",
+         "label": "Milk"
+      },
+      "sugar": {
+         "id": "sugar",
+         "label": "Sugar Cube"
+      },
+      "wood": {
+         "id": "wood",
+         "label": "Roll Cake Wood"
+      },
+      "wool": {
+         "id": "wool",
+         "label": "Cotton Candy Wool"
+      }
+   }
+}
