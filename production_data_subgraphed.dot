@@ -1,0 +1,824 @@
+digraph production_data {
+  clusterrank=global;
+  // Facilities
+  
+  
+
+  subgraph cluster_carpenter {
+    label="Carpentry Shop";
+    clusterrank=cluster;
+
+    
+
+    subgraph cluster_carpenter_materials {
+      
+      carpenter_berry [label="Jellyberry", fillcolor="lightyellow", style="filled", shape="box"];
+      
+      carpenter_flour [label="Biscuit Flour", fillcolor="lightyellow", style="filled", shape="box"];
+      
+      carpenter_wood [label="Roll Cake Wood", fillcolor="lightyellow", style="filled", shape="box"];
+      
+      carpenter_wool [label="Cotton Candy Wool", fillcolor="lightyellow", style="filled", shape="box"];
+      
+    }
+
+    
+    acorn_lamp [label="Acorn Lamp"];
+
+    
+
+    acorn_lamp -> carpenter_wood [label="Uses 12"];
+    
+
+    acorn_lamp -> carpenter_berry [label="Uses 3"];
+    
+    
+    cuckoo_clock [label="Cuckoo clock"];
+
+    
+
+    cuckoo_clock -> carpenter_flour [label="Uses 8"];
+    
+
+    cuckoo_clock -> toffee_jam [label="Uses 3"];
+    
+    
+    dreamcatcher [label="Swan Feather Dreamcatcher"];
+
+    
+
+    dreamcatcher -> carpenter_wool [label="Uses 1"];
+    
+
+    dreamcatcher -> omurice [label="Uses 1"];
+    
+    
+    pinecone [label="Pinecone Birdy Toy"];
+
+    
+
+    pinecone -> carpenter_wood [label="Uses 6"];
+    
+    
+  }
+  
+  
+
+  subgraph cluster_smithy {
+    label="Smithy";
+    clusterrank=cluster;
+
+    
+
+    subgraph cluster_smithy_materials {
+      
+      smithy_sugar [label="Sugar Cube", fillcolor="lightyellow", style="filled", shape="box"];
+      
+      smithy_wood [label="Roll Cake Wood", fillcolor="lightyellow", style="filled", shape="box"];
+      
+    }
+
+    
+    axe [label="Robust Axe"];
+
+    
+
+    axe -> smithy_wood [label="Uses 2"];
+    
+    
+    candy_saw [label="Candy Saw"];
+
+    
+
+    candy_saw -> smithy_wood [label="Uses 6"];
+    
+
+    candy_saw -> smithy_sugar [label="Uses 5"];
+    
+    
+    hammer [label="Indestructible Glazed Hammer"];
+
+    
+
+    hammer -> smithy_wood [label="Uses 30"];
+    
+
+    hammer -> smithy_sugar [label="Uses 35"];
+    
+    
+    pickaxe [label="Tempered pickaxe"];
+
+    
+
+    pickaxe -> smithy_wood [label="Uses 3"];
+    
+
+    pickaxe -> smithy_sugar [label="Uses 3"];
+    
+    
+    shovel [label="Diggy Shovel"];
+
+    
+
+    shovel -> smithy_wood [label="Uses 10"];
+    
+
+    shovel -> smithy_sugar [label="Uses 10"];
+    
+    
+    stake [label="Enchanted stake"];
+
+    
+
+    stake -> smithy_wood [label="Uses 15"];
+    
+
+    stake -> smithy_sugar [label="Uses 15"];
+    
+    
+    tongs [label="Enchanted Tongs"];
+
+    
+
+    tongs -> smithy_wood [label="Uses 22"];
+    
+
+    tongs -> smithy_sugar [label="Uses 18"];
+    
+    
+  }
+  
+  
+
+  subgraph cluster_workshop {
+    label="Artisan's Workshop";
+    clusterrank=cluster;
+
+    
+
+    subgraph cluster_workshop_materials {
+      
+      workshop_flour [label="Biscuit Flour", fillcolor="lightyellow", style="filled", shape="box"];
+      
+      workshop_sugar [label="Sugar Cube", fillcolor="lightyellow", style="filled", shape="box"];
+      
+      workshop_wool [label="Cotton Candy Wool", fillcolor="lightyellow", style="filled", shape="box"];
+      
+    }
+
+    
+    bead [label="Gleamy Bead"];
+
+    
+
+    bead -> burger [label="Uses 1"];
+    
+
+    bead -> workshop_wool [label="Uses 1"];
+    
+    
+    biscuit_planter [label="Biscuit planter"];
+
+    
+
+    biscuit_planter -> workshop_flour [label="Uses 4"];
+    
+
+    biscuit_planter -> pinecone [label="Uses 2"];
+    
+    
+    bowl [label="Colorful Bowl"];
+
+    
+
+    bowl -> workshop_sugar [label="Uses 24"];
+    
+
+    bowl -> pom_jam [label="Uses 2"];
+    
+    
+    glass [label="Shiny Glass"];
+
+    
+
+    glass -> workshop_sugar [label="Uses 12"];
+    
+
+    glass -> stew [label="Uses 1"];
+    
+    
+  }
+  
+  
+
+  subgraph cluster_jammery {
+    label="Jammery";
+    clusterrank=cluster;
+
+    
+
+    subgraph cluster_jammery_materials {
+      
+      jammery_berry [label="Jellyberry", fillcolor="lightyellow", style="filled", shape="box"];
+      
+      jammery_jellybean [label="Jellybean", fillcolor="lightyellow", style="filled", shape="box"];
+      
+      jammery_wool [label="Cotton Candy Wool", fillcolor="lightyellow", style="filled", shape="box"];
+      
+    }
+
+    
+    blue_jam [label="Jellybean Jam (blue)"];
+
+    
+
+    blue_jam -> jammery_jellybean [label="Uses 3"];
+    
+    
+    pom_jam [label="Pomegranate Jam"];
+
+    
+
+    pom_jam -> jammery_wool [label="Uses 1"];
+    
+
+    pom_jam -> latte [label="Uses 1"];
+    
+    
+    red_jam [label="Sweet Jelly Jam (red)"];
+
+    
+
+    red_jam -> jammery_jellybean [label="Uses 6"];
+    
+    
+    sparkleberry_jam [label="Sparkleberry Jam"];
+
+    
+
+    sparkleberry_jam -> jammery_wool [label="Uses 3"];
+    
+
+    sparkleberry_jam -> jammery_jellybean [label="Uses 20"];
+    
+    
+    toffee_jam [label="Toffee Jam (yellow)"];
+
+    
+
+    toffee_jam -> jammery_jellybean [label="Uses 6"];
+    
+
+    toffee_jam -> jammery_berry [label="Uses 1"];
+    
+    
+  }
+  
+  
+
+  subgraph cluster_cafe {
+    label="Latte cafe";
+    clusterrank=cluster;
+
+    
+
+    subgraph cluster_cafe_materials {
+      
+      cafe_berry [label="Jellyberry", fillcolor="lightyellow", style="filled", shape="box"];
+      
+      cafe_jellybean [label="Jellybean", fillcolor="lightyellow", style="filled", shape="box"];
+      
+      cafe_milk [label="Milk", fillcolor="lightyellow", style="filled", shape="box"];
+      
+      cafe_wool [label="Cotton Candy Wool", fillcolor="lightyellow", style="filled", shape="box"];
+      
+    }
+
+    
+    boba [label="Bubbly Boba"];
+
+    
+
+    boba -> doughnut [label="Uses 1"];
+    
+
+    boba -> cafe_wool [label="Uses 1"];
+    
+    
+    latte [label="Jellybean Latte"];
+
+    
+
+    latte -> cafe_jellybean [label="Uses 12"];
+    
+
+    latte -> cafe_milk [label="Uses 2"];
+    
+    
+    sweetberry_juice [label="Sweetberry Juice"];
+
+    
+
+    sweetberry_juice -> cafe_berry [label="Uses 10"];
+    
+
+    sweetberry_juice -> bead [label="Uses 2"];
+    
+    
+  }
+  
+  
+
+  subgraph cluster_jewelry {
+    label="Jewelry Salon";
+    clusterrank=cluster;
+
+    
+
+    subgraph cluster_jewelry_materials {
+      
+      jewelry_berry [label="Jellyberry", fillcolor="lightyellow", style="filled", shape="box"];
+      
+      jewelry_flour [label="Biscuit Flour", fillcolor="lightyellow", style="filled", shape="box"];
+      
+      jewelry_wool [label="Cotton Candy Wool", fillcolor="lightyellow", style="filled", shape="box"];
+      
+    }
+
+    
+    brooch [label="Rubyberry Brooch"];
+
+    
+
+    brooch -> jewelry_berry [label="Uses 16"];
+    
+
+    brooch -> dreamcatcher [label="Uses 1"];
+    
+    
+    crown [label="Bear Jelly Crown"];
+
+    
+
+    crown -> jewelry_wool [label="Uses 3"];
+    
+
+    crown -> flower_bouquet [label="Uses 1"];
+    
+    
+    glazed_ring [label="Glazed Ring"];
+
+    
+
+    glazed_ring -> jewelry_flour [label="Uses 12"];
+    
+
+    glazed_ring -> castella [label="Uses 1"];
+    
+    
+  }
+  
+  
+
+  subgraph cluster_diner {
+    label="Jampie Diner";
+    clusterrank=cluster;
+
+    
+
+    subgraph cluster_diner_materials {
+      
+      diner_berry [label="Jellyberry", fillcolor="lightyellow", style="filled", shape="box"];
+      
+      diner_flour [label="Biscuit Flour", fillcolor="lightyellow", style="filled", shape="box"];
+      
+      diner_jellybean [label="Jellybean", fillcolor="lightyellow", style="filled", shape="box"];
+      
+    }
+
+    
+    burger [label="Bear Jelly Burger"];
+
+    
+
+    burger -> diner_jellybean [label="Uses 10"];
+    
+
+    burger -> pie [label="Uses 1"];
+    
+    
+    deluxe_pizza [label="Jelly Deluxe Pizza"];
+
+    
+
+    deluxe_pizza -> candy_flower [label="Uses 4"];
+    
+
+    deluxe_pizza -> diner_berry [label="Uses 8"];
+    
+    
+    fancy_meal [label="Fancy Jellybean Meal"];
+
+    
+
+    fancy_meal -> diner_jellybean [label="Uses 25"];
+    
+
+    fancy_meal -> lollipop_basket [label="Uses 3"];
+    
+    
+    omurice [label="Fluffy Omurice"];
+
+    
+
+    omurice -> diner_berry [label="Uses 6"];
+    
+
+    omurice -> focaccia [label="Uses 1"];
+    
+    
+    pasta [label="Candy Pasta"];
+
+    
+
+    pasta -> diner_flour [label="Uses 7"];
+    
+
+    pasta -> cream [label="Uses 1"];
+    
+    
+    stew [label="Hot Jelly Stew"];
+
+    
+
+    stew -> diner_jellybean [label="Uses 4"];
+    
+
+    stew -> diner_berry [label="Uses 1"];
+    
+    
+  }
+  
+  
+
+  subgraph cluster_dairy {
+    label="Dairy Factory";
+    clusterrank=cluster;
+
+    
+
+    subgraph cluster_dairy_materials {
+      
+      dairy_milk [label="Milk", fillcolor="lightyellow", style="filled", shape="box"];
+      
+      dairy_sugar [label="Sugar Cube", fillcolor="lightyellow", style="filled", shape="box"];
+      
+    }
+
+    
+    butter [label="Butter"];
+
+    
+
+    butter -> dairy_sugar [label="Uses 15"];
+    
+
+    butter -> dairy_milk [label="Uses 5"];
+    
+    
+    cheese [label="Homemade Cheese"];
+
+    
+
+    cheese -> cuckoo_clock [label="Uses 1"];
+    
+
+    cheese -> dairy_milk [label="Uses 10"];
+    
+    
+    cream [label="Cream"];
+
+    
+
+    cream -> dairy_milk [label="Uses 2"];
+    
+
+    cream -> red_jam [label="Uses 1"];
+    
+    
+  }
+  
+  
+
+  subgraph cluster_flowers {
+    label="Flower shop";
+    clusterrank=cluster;
+
+    
+
+    subgraph cluster_flowers_materials {
+      
+      flowers_berry [label="Jellyberry", fillcolor="lightyellow", style="filled", shape="box"];
+      
+      flowers_jellybean [label="Jellybean", fillcolor="lightyellow", style="filled", shape="box"];
+      
+      flowers_sugar [label="Sugar Cube", fillcolor="lightyellow", style="filled", shape="box"];
+      
+    }
+
+    
+    candy_bouquet [label="Candy Bouquet"];
+
+    
+
+    candy_bouquet -> flowers_berry [label="Uses 5"];
+    
+
+    candy_bouquet -> pasta [label="Uses 1"];
+    
+    
+    candy_flower [label="Candy Flower"];
+
+    
+
+    candy_flower -> flowers_berry [label="Uses 2"];
+    
+
+    candy_flower -> biscuit_planter [label="Uses 1"];
+    
+    
+    flower_bouquet [label="Bell-Flower Bouquet"];
+
+    
+
+    flower_bouquet -> flowers_jellybean [label="Uses 20"];
+    
+
+    flower_bouquet -> pillow [label="Uses 2"];
+    
+    
+    happy_planter [label="Happy Planter"];
+
+    
+
+    happy_planter -> flowers_sugar [label="Uses 10"];
+    
+
+    happy_planter -> flowers_berry [label="Uses 4"];
+    
+    
+    lollipop_basket [label="Lollipop Flower Basket"];
+
+    
+
+    lollipop_basket -> flowers_jellybean [label="Uses 18"];
+    
+
+    lollipop_basket -> rye [label="Uses 3"];
+    
+    
+    yogurt_wreath [label="Glittering Yogurt Wreath"];
+
+    
+
+    yogurt_wreath -> deluxe_pizza [label="Uses 2"];
+    
+
+    yogurt_wreath -> flowers_jellybean [label="Uses 30"];
+    
+    
+  }
+  
+  
+
+  subgraph cluster_bakery {
+    label="Bakery";
+    clusterrank=cluster;
+
+    
+
+    subgraph cluster_bakery_materials {
+      
+      bakery_flour [label="Biscuit Flour", fillcolor="lightyellow", style="filled", shape="box"];
+      
+      bakery_jellybean [label="Jellybean", fillcolor="lightyellow", style="filled", shape="box"];
+      
+      bakery_milk [label="Milk", fillcolor="lightyellow", style="filled", shape="box"];
+      
+      bakery_sugar [label="Sugar Cube", fillcolor="lightyellow", style="filled", shape="box"];
+      
+    }
+
+    
+    castella [label="Fluffy Castella"];
+
+    
+
+    castella -> bakery_sugar [label="Uses 20"];
+    
+
+    castella -> bakery_milk [label="Uses 8"];
+    
+    
+    croissant [label="Golden Croissant"];
+
+    
+
+    croissant -> butter [label="Uses 1"];
+    
+
+    croissant -> bakery_milk [label="Uses 15"];
+    
+    
+    doughnut [label="Glazed Donuts"];
+
+    
+
+    doughnut -> glass [label="Uses 1"];
+    
+
+    doughnut -> bakery_flour [label="Uses 5"];
+    
+    
+    focaccia [label="Gingko Focaccia"];
+
+    
+
+    focaccia -> acorn_lamp [label="Uses 1"];
+    
+
+    focaccia -> bakery_flour [label="Uses 6"];
+    
+    
+    pie [label="Tart Jampie"];
+
+    
+
+    pie -> bakery_jellybean [label="Uses 6"];
+    
+
+    pie -> bakery_flour [label="Uses 3"];
+    
+    
+    rye [label="Hearty Rye"];
+
+    
+
+    rye -> bakery_flour [label="Uses 2"];
+    
+
+    rye -> blue_jam [label="Uses 1"];
+    
+    
+  }
+  
+  
+
+  subgraph cluster_maison {
+    label="Maison du Cake";
+    clusterrank=cluster;
+
+    
+
+    subgraph cluster_maison_materials {
+      
+      maison_flour [label="Biscuit Flour", fillcolor="lightyellow", style="filled", shape="box"];
+      
+      maison_milk [label="Milk", fillcolor="lightyellow", style="filled", shape="box"];
+      
+    }
+
+    
+    muffin [label="Spooky Muffin"];
+
+    
+
+    muffin -> maison_flour [label="Uses 12"];
+    
+
+    muffin -> maison_milk [label="Uses 7"];
+    
+    
+    party_cake [label="Party Cake"];
+
+    
+
+    party_cake -> maison_flour [label="Uses 18"];
+    
+
+    party_cake -> cheese [label="Uses 2"];
+    
+    
+    strawberry_cake [label="Strawberry Cake"];
+
+    
+
+    strawberry_cake -> maison_flour [label="Uses 14"];
+    
+
+    strawberry_cake -> boba [label="Uses 2"];
+    
+    
+  }
+  
+  
+
+  subgraph cluster_toy_store {
+    label="Toy Store";
+    clusterrank=cluster;
+
+    
+
+    subgraph cluster_toy_store_materials {
+      
+      toy_store_flour [label="Biscuit Flour", fillcolor="lightyellow", style="filled", shape="box"];
+      
+      toy_store_wool [label="Cotton Candy Wool", fillcolor="lightyellow", style="filled", shape="box"];
+      
+    }
+
+    
+    pillow [label="Cloud Pillow"];
+
+    
+
+    pillow -> toy_store_flour [label="Uses 8"];
+    
+
+    pillow -> toy_store_wool [label="Uses 1"];
+    
+    
+    pitaya_dragon [label="Pitaya Dragon Toy"];
+
+    
+
+    pitaya_dragon -> toy_store_wool [label="Uses 2"];
+    
+
+    pitaya_dragon -> root_beer [label="Uses 2"];
+    
+    
+    toy [label="Bear Jelly Toy"];
+
+    
+
+    toy -> toy_store_wool [label="Uses 1"];
+    
+
+    toy -> candy_bouquet [label="Uses 2"];
+    
+    
+  }
+  
+  
+
+  subgraph cluster_barrel_inn {
+    label="Barrel Inn";
+    clusterrank=cluster;
+
+    
+
+    subgraph cluster_barrel_inn_materials {
+      
+      barrel_inn_berry [label="Jellyberry", fillcolor="lightyellow", style="filled", shape="box"];
+      
+      barrel_inn_flour [label="Biscuit Flour", fillcolor="lightyellow", style="filled", shape="box"];
+      
+      barrel_inn_wood [label="Roll Cake Wood", fillcolor="lightyellow", style="filled", shape="box"];
+      
+    }
+
+    
+    redberry_juice [label="Redberry Juice"];
+
+    
+
+    redberry_juice -> barrel_inn_berry [label="Uses 2"];
+    
+
+    redberry_juice -> toy [label="Uses 1"];
+    
+    
+    root_beer [label="Cream Root Beer"];
+
+    
+
+    root_beer -> barrel_inn_flour [label="Uses 10"];
+    
+
+    root_beer -> happy_planter [label="Uses 1"];
+    
+    
+    root_bottle [label="Vintage Root Bottle"];
+
+    
+
+    root_bottle -> barrel_inn_wood [label="Uses 50"];
+    
+
+    root_bottle -> muffin [label="Uses 2"];
+    
+    
+  }
+  
+}

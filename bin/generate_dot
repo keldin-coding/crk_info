@@ -6,3 +6,4 @@ require "crk_info"
 
 CrkInfo::Database.load
 CrkInfo::Database.dump_as_dot
+CrkInfo::Database.dump_subgraphed_dot

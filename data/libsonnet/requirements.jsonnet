@@ -383,6 +383,13 @@ local requirements = [
       {item: goods.muffin.id, count: 2},
     ],
   },
+  {
+    product: goods.sweetberry_juice.id,
+    requires: [
+      {item: materials.berry.id, count: 10},
+      {item: goods.bead.id, count: 2},
+    ],
+  }
 ];
 
 {

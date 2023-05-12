@@ -122,6 +122,8 @@ digraph production_data {
   
   strawberry_cake [label="Strawberry Cake", fillcolor="lightblue", style="filled"];
   
+  sweetberry_juice [label="Sweetberry Juice", fillcolor="lightblue", style="filled"];
+  
   toffee_jam [label="Toffee Jam (yellow)", fillcolor="lightblue", style="filled"];
   
   tongs [label="Enchanted Tongs", fillcolor="lightblue", style="filled"];
@@ -429,6 +431,12 @@ digraph production_data {
   strawberry_cake -> flour [label="Uses 14"];
   
   strawberry_cake -> boba [label="Uses 2"];
+  
+  
+  
+  sweetberry_juice -> berry [label="Uses 10"];
+  
+  sweetberry_juice -> bead [label="Uses 2"];
   
   
   

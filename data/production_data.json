@@ -1,6 +1,61 @@
 {
+   "facilities": {
+      "bakery": {
+         "id": "bakery",
+         "label": "Bakery"
+      },
+      "barrel_inn": {
+         "id": "barrel_inn",
+         "label": "Barrel Inn"
+      },
+      "cafe": {
+         "id": "cafe",
+         "label": "Latte cafe"
+      },
+      "carpenter": {
+         "id": "carpenter",
+         "label": "Carpentry Shop"
+      },
+      "dairy": {
+         "id": "dairy",
+         "label": "Dairy Factory"
+      },
+      "diner": {
+         "id": "diner",
+         "label": "Jampie Diner"
+      },
+      "flowers": {
+         "id": "flowers",
+         "label": "Flower shop"
+      },
+      "jammery": {
+         "id": "jammery",
+         "label": "Jammery"
+      },
+      "jewelry": {
+         "id": "jewelry",
+         "label": "Jewelry Salon"
+      },
+      "maison": {
+         "id": "maison",
+         "label": "Maison du Cake"
+      },
+      "smithy": {
+         "id": "smithy",
+         "label": "Smithy"
+      },
+      "toy_store": {
+         "id": "toy_store",
+         "label": "Toy Store"
+      },
+      "workshop": {
+         "id": "workshop",
+         "label": "Artisan's Workshop"
+      }
+   },
    "goods": {
       "acorn_lamp": {
+         "facility": "carpenter",
          "id": "acorn_lamp",
          "label": "Acorn Lamp",
          "requires": [
@@ -15,6 +70,7 @@
          ]
       },
       "axe": {
+         "facility": "smithy",
          "id": "axe",
          "label": "Robust Axe",
          "requires": [
@@ -25,6 +81,7 @@
          ]
       },
       "bead": {
+         "facility": "workshop",
          "id": "bead",
          "label": "Gleamy Bead",
          "requires": [
@@ -39,6 +96,7 @@
          ]
       },
       "biscuit_planter": {
+         "facility": "workshop",
          "id": "biscuit_planter",
          "label": "Biscuit planter",
          "requires": [
@@ -53,6 +111,7 @@
          ]
       },
       "blue_jam": {
+         "facility": "jammery",
          "id": "blue_jam",
          "label": "Jellybean Jam (blue)",
          "requires": [
@@ -63,6 +122,7 @@
          ]
       },
       "boba": {
+         "facility": "cafe",
          "id": "boba",
          "label": "Bubbly Boba",
          "requires": [
@@ -77,6 +137,7 @@
          ]
       },
       "bowl": {
+         "facility": "workshop",
          "id": "bowl",
          "label": "Colorful Bowl",
          "requires": [
@@ -91,6 +152,7 @@
          ]
       },
       "brooch": {
+         "facility": "jewelry",
          "id": "brooch",
          "label": "Rubyberry Brooch",
          "requires": [
@@ -105,6 +167,7 @@
          ]
       },
       "burger": {
+         "facility": "diner",
          "id": "burger",
          "label": "Bear Jelly Burger",
          "requires": [
@@ -119,6 +182,7 @@
          ]
       },
       "butter": {
+         "facility": "dairy",
          "id": "butter",
          "label": "Butter",
          "requires": [
@@ -133,6 +197,7 @@
          ]
       },
       "candy_bouquet": {
+         "facility": "flowers",
          "id": "candy_bouquet",
          "label": "Candy Bouquet",
          "requires": [
@@ -147,6 +212,7 @@
          ]
       },
       "candy_flower": {
+         "facility": "flowers",
          "id": "candy_flower",
          "label": "Candy Flower",
          "requires": [
@@ -161,6 +227,7 @@
          ]
       },
       "candy_saw": {
+         "facility": "smithy",
          "id": "candy_saw",
          "label": "Candy Saw",
          "requires": [
@@ -175,6 +242,7 @@
          ]
       },
       "castella": {
+         "facility": "bakery",
          "id": "castella",
          "label": "Fluffy Castella",
          "requires": [
@@ -189,6 +257,7 @@
          ]
       },
       "cheese": {
+         "facility": "dairy",
          "id": "cheese",
          "label": "Homemade Cheese",
          "requires": [
@@ -203,6 +272,7 @@
          ]
       },
       "cream": {
+         "facility": "dairy",
          "id": "cream",
          "label": "Cream",
          "requires": [
@@ -217,6 +287,7 @@
          ]
       },
       "croissant": {
+         "facility": "bakery",
          "id": "croissant",
          "label": "Golden Croissant",
          "requires": [
@@ -231,6 +302,7 @@
          ]
       },
       "crown": {
+         "facility": "jewelry",
          "id": "crown",
          "label": "Bear Jelly Crown",
          "requires": [
@@ -245,6 +317,7 @@
          ]
       },
       "cuckoo_clock": {
+         "facility": "carpenter",
          "id": "cuckoo_clock",
          "label": "Cuckoo clock",
          "requires": [
@@ -259,6 +332,7 @@
          ]
       },
       "deluxe_pizza": {
+         "facility": "diner",
          "id": "deluxe_pizza",
          "label": "Jelly Deluxe Pizza",
          "requires": [
@@ -273,6 +347,7 @@
          ]
       },
       "doughnut": {
+         "facility": "bakery",
          "id": "doughnut",
          "label": "Glazed Donuts",
          "requires": [
@@ -287,6 +362,7 @@
          ]
       },
       "dreamcatcher": {
+         "facility": "carpenter",
          "id": "dreamcatcher",
          "label": "Swan Feather Dreamcatcher",
          "requires": [
@@ -301,6 +377,7 @@
          ]
       },
       "fancy_meal": {
+         "facility": "diner",
          "id": "fancy_meal",
          "label": "Fancy Jellybean Meal",
          "requires": [
@@ -315,6 +392,7 @@
          ]
       },
       "flower_bouquet": {
+         "facility": "flowers",
          "id": "flower_bouquet",
          "label": "Bell-Flower Bouquet",
          "requires": [
@@ -329,6 +407,7 @@
          ]
       },
       "focaccia": {
+         "facility": "bakery",
          "id": "focaccia",
          "label": "Gingko Focaccia",
          "requires": [
@@ -343,6 +422,7 @@
          ]
       },
       "glass": {
+         "facility": "workshop",
          "id": "glass",
          "label": "Shiny Glass",
          "requires": [
@@ -357,6 +437,7 @@
          ]
       },
       "glazed_ring": {
+         "facility": "jewelry",
          "id": "glazed_ring",
          "label": "Glazed Ring",
          "requires": [
@@ -371,6 +452,7 @@
          ]
       },
       "hammer": {
+         "facility": "smithy",
          "id": "hammer",
          "label": "Indestructible Glazed Hammer",
          "requires": [
@@ -385,6 +467,7 @@
          ]
       },
       "happy_planter": {
+         "facility": "flowers",
          "id": "happy_planter",
          "label": "Happy Planter",
          "requires": [
@@ -399,6 +482,7 @@
          ]
       },
       "latte": {
+         "facility": "cafe",
          "id": "latte",
          "label": "Jellybean Latte",
          "requires": [
@@ -413,6 +497,7 @@
          ]
       },
       "lollipop_basket": {
+         "facility": "flowers",
          "id": "lollipop_basket",
          "label": "Lollipop Flower Basket",
          "requires": [
@@ -427,6 +512,7 @@
          ]
       },
       "muffin": {
+         "facility": "maison",
          "id": "muffin",
          "label": "Spooky Muffin",
          "requires": [
@@ -441,6 +527,7 @@
          ]
       },
       "omurice": {
+         "facility": "diner",
          "id": "omurice",
          "label": "Fluffy Omurice",
          "requires": [
@@ -455,6 +542,7 @@
          ]
       },
       "party_cake": {
+         "facility": "maison",
          "id": "party_cake",
          "label": "Party Cake",
          "requires": [
@@ -469,6 +557,7 @@
          ]
       },
       "pasta": {
+         "facility": "diner",
          "id": "pasta",
          "label": "Candy Pasta",
          "requires": [
@@ -483,6 +572,7 @@
          ]
       },
       "pickaxe": {
+         "facility": "smithy",
          "id": "pickaxe",
          "label": "Tempered pickaxe",
          "requires": [
@@ -497,6 +587,7 @@
          ]
       },
       "pie": {
+         "facility": "bakery",
          "id": "pie",
          "label": "Tart Jampie",
          "requires": [
@@ -511,6 +602,7 @@
          ]
       },
       "pillow": {
+         "facility": "toy_store",
          "id": "pillow",
          "label": "Cloud Pillow",
          "requires": [
@@ -525,6 +617,7 @@
          ]
       },
       "pinecone": {
+         "facility": "carpenter",
          "id": "pinecone",
          "label": "Pinecone Birdy Toy",
          "requires": [
@@ -535,6 +628,7 @@
          ]
       },
       "pitaya_dragon": {
+         "facility": "toy_store",
          "id": "pitaya_dragon",
          "label": "Pitaya Dragon Toy",
          "requires": [
@@ -549,6 +643,7 @@
          ]
       },
       "pom_jam": {
+         "facility": "jammery",
          "id": "pom_jam",
          "label": "Pomegranate Jam",
          "requires": [
@@ -563,6 +658,7 @@
          ]
       },
       "red_jam": {
+         "facility": "jammery",
          "id": "red_jam",
          "label": "Sweet Jelly Jam (red)",
          "requires": [
@@ -573,6 +669,7 @@
          ]
       },
       "redberry_juice": {
+         "facility": "barrel_inn",
          "id": "redberry_juice",
          "label": "Redberry Juice",
          "requires": [
@@ -587,6 +684,7 @@
          ]
       },
       "root_beer": {
+         "facility": "barrel_inn",
          "id": "root_beer",
          "label": "Cream Root Beer",
          "requires": [
@@ -601,6 +699,7 @@
          ]
       },
       "root_bottle": {
+         "facility": "barrel_inn",
          "id": "root_bottle",
          "label": "Vintage Root Bottle",
          "requires": [
@@ -615,6 +714,7 @@
          ]
       },
       "rye": {
+         "facility": "bakery",
          "id": "rye",
          "label": "Hearty Rye",
          "requires": [
@@ -629,6 +729,7 @@
          ]
       },
       "shovel": {
+         "facility": "smithy",
          "id": "shovel",
          "label": "Diggy Shovel",
          "requires": [
@@ -643,6 +744,7 @@
          ]
       },
       "sparkleberry_jam": {
+         "facility": "jammery",
          "id": "sparkleberry_jam",
          "label": "Sparkleberry Jam",
          "requires": [
@@ -657,6 +759,7 @@
          ]
       },
       "stake": {
+         "facility": "smithy",
          "id": "stake",
          "label": "Enchanted stake",
          "requires": [
@@ -671,6 +774,7 @@
          ]
       },
       "stew": {
+         "facility": "diner",
          "id": "stew",
          "label": "Hot Jelly Stew",
          "requires": [
@@ -685,6 +789,7 @@
          ]
       },
       "strawberry_cake": {
+         "facility": "maison",
          "id": "strawberry_cake",
          "label": "Strawberry Cake",
          "requires": [
@@ -698,7 +803,23 @@
             }
          ]
       },
+      "sweetberry_juice": {
+         "facility": "cafe",
+         "id": "sweetberry_juice",
+         "label": "Sweetberry Juice",
+         "requires": [
+            {
+               "count": 10,
+               "item": "berry"
+            },
+            {
+               "count": 2,
+               "item": "bead"
+            }
+         ]
+      },
       "toffee_jam": {
+         "facility": "jammery",
          "id": "toffee_jam",
          "label": "Toffee Jam (yellow)",
          "requires": [
@@ -713,6 +834,7 @@
          ]
       },
       "tongs": {
+         "facility": "smithy",
          "id": "tongs",
          "label": "Enchanted Tongs",
          "requires": [
@@ -727,6 +849,7 @@
          ]
       },
       "toy": {
+         "facility": "toy_store",
          "id": "toy",
          "label": "Bear Jelly Toy",
          "requires": [
@@ -741,6 +864,7 @@
          ]
       },
       "yogurt_wreath": {
+         "facility": "flowers",
          "id": "yogurt_wreath",
          "label": "Glittering Yogurt Wreath",
          "requires": [

@@ -1,0 +1,29 @@
+digraph production_data {
+  clusterrank=global;
+  // Facilities
+  <% goods_by_facility.each do |facility_id, goods| %>
+  <% facility_mats_map = materials.each_key.each_with_object({}) { |key, obj| obj[key] = "#{facility_id}_#{key}" } %>
+
+  subgraph cluster_<%= facility_id %> {
+    label="<%= facilities[facility_id].label %>";
+    clusterrank=cluster;
+
+    <% filtered_mats = materials.select { |(m_id, _)| goods.any? { |good| good.requires_item?(m_id) } } %>
+
+    subgraph cluster_<%= facility_id %>_materials {
+      <% filtered_mats.each do |mat_id, material| %>
+      <%= facility_mats_map[mat_id] %> [label="<%= material.label %>", fillcolor="lightyellow", style="filled", shape="box"];
+      <% end %>
+    }
+
+    <% goods.each do |good| %>
+    <%= good.id %> [label="<%= good.label %>"];
+
+    <% good.requires.each do |requirement| %>
+
+    <%= good.id %> -> <%= facility_mats_map[requirement.item_id] || requirement.item_id %> [label="<%= "Uses #{requirement.count}" %>"];
+    <% end %>
+    <% end %>
+  }
+  <% end %>
+}

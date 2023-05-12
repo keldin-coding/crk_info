@@ -5,6 +5,9 @@ set -euo pipefail
 ./bin/generate_json
 ./bin/generate_dot
 
+dot -Tsvg production_data.dot -o production_data.svg
 dot -Tpng production_data.dot -o production_data.png
-open production_data.png
+dot -Tsvg production_data_subgraphed.dot -o production_data_subgraphed.svg
+dot -Tpng production_data_subgraphed.dot -o production_data_subgraphed.png
+
 
